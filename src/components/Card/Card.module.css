@@ -1,0 +1,28 @@
+.cards{
+    box-shadow: 0 0 15px 0 rgba(225, 222, 222, 0.712);
+}
+
+.icons{
+    font-size: 2rem;
+    margin-right: .5rem;
+    transition: transform 0.3s ease;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+    color: black;
+    cursor: pointer;
+}
+
+.iconss{
+    font-size: 2rem;
+    margin-right: .5rem;
+    transition: transform 0.3s ease;
+    color: rgb(167, 10, 10);
+}
+
+.iconss:hover{
+    transform: scale(1.2);
+    color: rgb(167, 10, 10);
+    cursor: pointer;
+}

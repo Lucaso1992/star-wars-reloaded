@@ -1,0 +1,70 @@
+.navbar{
+    background-color: black;
+    min-height: 60px;
+    box-shadow: 0 0 6px white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    color: whitesmoke;
+    margin: 0;
+    margin-left: 48px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.logo:hover{    
+    text-shadow: 3px 3px 13px #FF0000;
+}
+
+.logo:active{
+    color: rgba(229, 228, 193, 0.806);
+}
+
+.logo_container a{
+    text-decoration: none;
+}
+
+.logo_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logout{
+   cursor: pointer;  
+   font-size: 19px;
+   padding-right: 2rem;
+   border-right: 2px solid white;
+   color: whitesmoke;
+}
+
+.logout:hover{
+    text-shadow: 3px 3px 13px #FF0000;
+}
+
+.loggout:active{
+    color: rgba(229, 228, 193, 0.806);
+}
+
+.loggin{
+    font-size: 19px;
+    padding-right: 2rem;
+    color: whitesmoke;
+}
+
+.loggin:hover{
+    text-shadow: 3px 3px 13px #FF0000;
+}
+
+.loggin:active{
+    color: rgba(229, 228, 193, 0.806);
+}
+
+.log_fav_container{
+    display: flex;
+    align-items: center;
+}

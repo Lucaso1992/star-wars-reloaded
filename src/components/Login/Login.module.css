@@ -1,0 +1,44 @@
+.ul{
+    border: none;
+    box-shadow: inset 0 -4px 4px -4px white;
+    margin-bottom: 2rem;
+}
+
+.whole_div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40rem;
+}
+
+.inputss{
+    background-color: rgba(0, 0, 0, 0.475);
+    border: none;
+    border-radius: 1px;
+    height: 2rem;
+    color: white;
+}
+
+.buttonss{
+    border: none;
+    background-color: none;
+    background: none;
+    color: white;
+    width: auto;
+    font-size: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttonss:hover{
+    transform: scale(1.2);
+}
+
+.buttonss:active{
+    color: rgba(229, 228, 193, 0.806);
+}
+.formulary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
