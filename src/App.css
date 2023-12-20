@@ -3,15 +3,17 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
+    /* position: relative; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 #root{
-    min-height: 100vh;
     background-color: #00000095;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{

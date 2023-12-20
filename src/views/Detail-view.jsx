@@ -29,7 +29,7 @@ const Detail = () => {
     }, [])
 
     return (
-        <div className='d-flex justify-content-center mt-4'>
+        <div className='d-flex justify-content-center mt-4 mb-2'>
             <Card name={targetResources.name} type={targetResources.type} id={targetResources.id}>
                 {targetResources.type === 'characters' && (
                     <div>

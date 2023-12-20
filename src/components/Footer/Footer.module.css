@@ -3,8 +3,8 @@
     min-height: 60px;
     box-shadow: inset 0 6px 6px -6px white;
     width: 100%;
-    margin-top: 4rem;
-    position: absolute;
+    margin-top: auto;
+    /* position: absolute  ; */
     bottom: 0;
     display: flex;
     justify-content: center;
