@@ -3,7 +3,7 @@ const validateToken = async () => {
     
     const token = sessionStorage.getItem('token');
     try{
-        const response = await fetch(`https://3000-lucaso1992-starwarsapi-pxr6gi0pu0i.ws-eu106.gitpod.io/protected`, {
+        const response = await fetch(`https://3000-lucaso1992-starwarsapi-s3wq5xjviz0.ws-eu107.gitpod.io/protected`, {
             method: 'GET',
             headers: {'Authorization': 'Bearer ' + token}
         });

@@ -1,7 +1,7 @@
 const Authentication = async (email, password) => {
 
     return (
-        await fetch (`https://3000-lucaso1992-starwarsapi-pxr6gi0pu0i.ws-eu106.gitpod.io/login`, {
+        await fetch (`https://3000-lucaso1992-starwarsapi-s3wq5xjviz0.ws-eu107.gitpod.io/login`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({email: email, password: password})

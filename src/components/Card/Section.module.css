@@ -10,5 +10,11 @@
 .titles{
     margin-top: 2rem;
     margin-bottom: 1.5rem;
+    font-size: 4rem;
 }
 
+@media (min-width: 1042px) {
+.titles{
+    font-size: 5rem;
+}
+      }

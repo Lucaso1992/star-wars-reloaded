@@ -1,13 +1,18 @@
+.dropdown{
+    margin-right: 1rem;
+}
+
 .button{
     display: flex;
     align-items: center;
-    margin-right: .7rem;
     background-color: black;
     color: white;
     border: none;
     width: 7rem;    
     height: 2rem;
-    font-size: 19px;
+    font-size: 16px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .button:hover{
@@ -31,5 +36,19 @@ li{
     margin-bottom: 0px;
     padding-bottom: 0px;
     color: rgb(229, 228, 193);
-    font-size: 1.2rem;
+    font-size: 16px;
 }
+
+@media (min-width: 1042px) {
+    .button{
+        font-size: 19px;
+        padding-left: 12px;
+        margin-right: .7rem;
+    }
+    .count_div{
+        font-size: 1.2rem;
+    }
+    .dropdown{
+        margin-right: 3rem;
+    }
+  }

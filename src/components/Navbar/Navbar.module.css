@@ -10,7 +10,7 @@
 .logo{
     color: whitesmoke;
     margin: 0;
-    margin-left: 48px;
+    margin-left: 1rem;
     font-size: 20px;
     text-decoration: none;
 }
@@ -36,10 +36,11 @@
 
 .logout{
    cursor: pointer;  
-   font-size: 19px;
-   padding-right: 2rem;
+   font-size: 16px;
+   padding-right: 1rem;
    border-right: 2px solid white;
    color: whitesmoke;
+   margin-left: 1rem;
 }
 
 .logout:hover{
@@ -51,9 +52,10 @@
 }
 
 .loggin{
-    font-size: 19px;
+    font-size: 16px;
     padding-right: 2rem;
     color: whitesmoke;
+    margin-left: 1rem;
 }
 
 .loggin:hover{
@@ -68,3 +70,16 @@
     display: flex;
     align-items: center;
 }
+
+
+@media (min-width: 1042px) {
+.logo{
+    margin-left: 48px;
+}
+
+.logout, .loggin{
+    font-size: 19px;
+    padding-right: 2rem;
+    margin-left: 0;
+}
+  }

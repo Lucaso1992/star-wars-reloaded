@@ -24,7 +24,9 @@ const Login = () => {
 
     const handleSingUp = async (e) => {
         e.preventDefault();
-        try {
+        if(password.length < 8){
+            alert("La contraseña debe contener al menos 8 caracteres")
+        }  else try {
             const signedUp = await Signup(email, password);
             if (signedUp) {
                 console.log(signedUp)
@@ -62,7 +64,7 @@ const Login = () => {
 
     return (
         <div className={styles.whole_div}>
-            <div className="container w-25">
+            <div className={`${styles.form_container} d-flex flex-column`}>
                 <ul className={`nav nav-tabs d-flex justify-content-center ${styles.ul}`} id="myTab" role="tablist">
                     <li className="nav-item my-4" role="presentation">
                         <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
@@ -77,11 +79,11 @@ const Login = () => {
                     <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabIndex="0">
                         <div>
                             <form className={styles.formulary}>
-                                <div className="d-flex justify-content-around align-items-center mb-5">
+                                <div className="d-flex justify-content-around align-items-center  mb-5">
                                     <label className='text-white'>Email:</label>
                                     <input type="email" className={styles.inputss} value={email} onChange={handleEmailChange} required />
                                 </div>
-                                <div className="d-flex justify-content-around align-items-center mb-5">
+                                <div className="d-flex justify-content-around align-items-center  mb-5">
                                     <label className='text-light'>Password:</label>
                                     <input type="password" className={styles.inputss} value={password} onChange={handlePasswordChange} required />
                                 </div>
@@ -92,11 +94,11 @@ const Login = () => {
                     <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabIndex="0">
                         <div>
                             <form className={styles.formulary}>
-                                <div className="d-flex justify-content-around align-items-center mb-5">
+                                <div className="d-flex justify-content-around align-items-center  mb-5">
                                     <label className='text-light'>Email:</label>
                                     <input type="email" className={styles.inputss} value={email} onChange={handleEmailChange} required />
                                 </div>
-                                <div className="d-flex justify-content-around align-items-center mb-5">
+                                <div className="d-flex justify-content-around align-items-center  mb-5">
                                     <label className='text-light'>Password:</label>
                                     <input type="password" className={styles.inputss} value={password} onChange={handlePasswordChange} required />
                                 </div>
