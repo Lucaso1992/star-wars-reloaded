@@ -10,7 +10,7 @@ body{
 }
 
 #root{
-    /* background-color: #00000095; */
+    background-color: #00000095;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
