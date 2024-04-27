@@ -19,6 +19,10 @@ const Detail = () => {
     const targetResources = resources.find(e => e.id === params.id);
 
     useEffect(() => {
+        console.log(params)
+    }, [])
+
+    useEffect(() => {
         const Validation = async () => {
             if (!(await validateToken())) {
                 alert('tenes que loguearte')
