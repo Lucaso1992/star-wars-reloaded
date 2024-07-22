@@ -3,7 +3,7 @@ const validateToken = async () => {
     
     const token = sessionStorage.getItem('token');
     try{
-        const response = await fetch(`https://organic-yodel-gg4jpxvw9pjhv669-3000.app.github.dev/protected`, {
+        const response = await fetch(`https://glorious-waffle-7gv6x7jj9vvhx5rj-3000.app.github.dev/protected`, {
             method: 'GET',
             headers: {'Authorization': 'Bearer ' + token}
         });
@@ -13,8 +13,10 @@ const validateToken = async () => {
             const data = await response.json();
             if (!(data)){
                 alert('Token no valido');
+                console.log(false)
                 return false
             }  else {
+                console.log(true)
                 return true
             }
         }

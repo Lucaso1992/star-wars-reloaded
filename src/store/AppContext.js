@@ -17,6 +17,10 @@ export const AppProvider = ({ children }) => {
         setLoggedIn(false);
     }
 
+    useEffect(() => {
+        console.log(loggedIn)
+    }, [loggedIn])
+
     const handleFavorites = ( id, type, name) => {
         setFavorites((prev) => {
             const newFavorite = {

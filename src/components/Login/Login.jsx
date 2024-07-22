@@ -29,7 +29,6 @@ const Login = () => {
         }  else try {
             const signedUp = await Signup(email, password);
             if (signedUp) {
-                console.log(signedUp)
                 navigate('/login');
                 setEmail('');
                 setPassword('');
